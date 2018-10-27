@@ -30,5 +30,8 @@
 a-scene {
  height: 80vh;
  width: 80%;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 15px
 }
 </style>

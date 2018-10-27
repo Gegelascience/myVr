@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <p> This project integrate aframe library inside a vue project generate with vue-cli</p>
     
   </div>
 </template>

@@ -1,8 +1,6 @@
 <template>
   <div class="eiffelTower">
-
     <a-scene embedded background="color:#F0FFFF">
-
       <!-- Camera -->
       <a-entity id="cam" cam_move camera look-controls position="0 1.5 138"></a-entity>
 
@@ -11,7 +9,6 @@
 
       <!--trottoir tour eiffel-->
       <a-plane  color="#9793a1" height="125" width="123" position="0 0 -47.5" rotation="-90 0 0" static-body ></a-plane>
-
 
       <!--route-->
       <a-plane id='road'  color="#808080" width="123" height="8" position="0 0 19" rotation="-90 0 0" static-body></a-plane>
@@ -82,9 +79,19 @@
   </div>
 </template>
 
+<script>
+export default {
+  name:'EiffelTower'
+}
+</script>
+
 <style scoped>
 a-scene {
  height: 80vh;
  width: 80%;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 15px
 }
 </style>
+

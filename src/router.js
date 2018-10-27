@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import AframeScene from './views/AframeScene.vue';
 
 Vue.use(Router)
 
@@ -25,6 +26,12 @@ export default new Router({
       path:'/solarSys',
       name:'solarSys',
       component: () => import('./views/SolarSystem.vue')
+    },
+    {
+      path:'/scene/:id',
+      name:'aframeScene',
+      component: AframeScene,
+      props:true
     }
   ]
 })
